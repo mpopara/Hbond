@@ -7,7 +7,7 @@ Quantitative analysis of hydrogen bonds is far from trivial. The cause of this i
 This has a consequence that numerous ways of defining the hydrogen bond appear in the literature, where each of these definitions emphasizes different aspects of hydrogen bond.
 Criteria used to define the presence of hydrogen bond can be divided into energy- and geometry-based criteria. However, this is not the most precise classification, because using
 geometric criteria does not mean that energy aspects are excluded. They are to some extent implicitely contained in stereochemistry of the hydrogen bond.
-Even though the geometric criteria ofter overestimate the occurence of hydrogen bonds, they are far more computationally efficient and convenient compared to energy-based analysis.
+Even though the geometric criteria ofter overestimate the occurrence of hydrogen bonds, they are far more computationally efficient and convenient compared to energy-based analysis.
 However, finding the most ideal geometric definition of hydrogen bond is not an easy task, and moreover they often contain certain degree of arbitrarity and approximation.
 
 In this script I applied slightly modified geometric definition of that proposed by Raschka _et al_, 2018.<sup>1</sup> This definition of hydrogen bond analyzes local geometry of four atoms, namely donor, hydrogen, acceptor and pre-acceptor, 
@@ -30,12 +30,12 @@ These three geometric criteria are atom-specific, and in principle should be tai
 given pair of atoms, while angles  &theta; <sub>D-H-A</sub> and &theta; <sub>H-A-PA</sub> can be obtained from X-ray measurements.
 
 For each frame in trajectory, an observable _h_ takes value 1 if all three criteria are met and hydrogren bond occurs. Otherwise, it takes value zero.
-Occurence of hydrogen bond, as an array of ones and zeros, is saved as .dat file. 
+Occurrence of hydrogen bond, as an array of ones and zeros, is saved as .dat file. 
 
 **Outlook**
 
-This binary time trace of hydrogen bond occurence can be subsequently analyzed. For instance, one can calculate so-called continuous hydrogen bond autocorrelation function, which can be integrated to find the hydrogen bond lifetime.<sup>2</sup>
-Since presence of hydrogen bond can be a property of enzymatically active or inactive species, another possibility is to therefore use hydrogen bond occurence for clustering/slassification of structural models.
+This binary time trace of hydrogen bond occurrence can be subsequently analyzed. For instance, one can calculate so-called continuous hydrogen bond autocorrelation function, which can be integrated to find the hydrogen bond lifetime.<sup>2</sup>
+Since presence of hydrogen bond can be a property of enzymatically active or inactive species, another possibility is to therefore use hydrogen bond occurrence for clustering/slassification of structural models.
 
 ## Input file requirements
 
